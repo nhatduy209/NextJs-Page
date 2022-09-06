@@ -12,7 +12,8 @@ export const Schedule = () => (
       <Grid>
         <ScheduleMenu>
           <Store />
-          <Text>ショップ</Text>
+
+          <StickText>ショップ</StickText>
         </ScheduleMenu>
 
         <Row>
@@ -35,7 +36,7 @@ export const Schedule = () => (
       <Grid>
         <ScheduleMenu>
           <Dishes />
-          <Text>飲食店</Text>
+          <StickText>飲食店</StickText>
         </ScheduleMenu>
 
         <Row>
@@ -81,6 +82,7 @@ const TextLongDate = styled.span`
 `;
 
 const Grid = styled.div`
+  margin: 0px;
   display: grid;
   grid-template-columns: 30% 70%;
 `;
@@ -104,6 +106,16 @@ const Text = styled.p`
   text-align: start;
 `;
 
+const StickText = styled.p`
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 140%;
+  text-align: start;
+  margin: 5px 0px 0px 0px;
+`;
+
 const Line = styled.div`
   border: 1px dashed #3d3d3d;
 `;
@@ -113,8 +125,4 @@ const ScheduleMenu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-const RowDirection = styled.div`
-  display: flex;
-  flex-direction: row;
 `;
