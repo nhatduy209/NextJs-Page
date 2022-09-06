@@ -2,8 +2,8 @@ import * as React from "react";
 
 export const Marker = (props) => (
   <svg
-    width={25}
-    height={30}
+    width={38}
+    height={28}
     viewBox="0 0 25 30"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
