@@ -101,6 +101,7 @@ const Text = styled.p`
   font-weight: 600;
   font-size: 11px;
   line-height: 140%;
+  text-align: start;
 `;
 
 const Line = styled.div`

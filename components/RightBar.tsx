@@ -70,6 +70,7 @@ const Header = styled.div`
   border-left: 1px solid #3d3d3d;
   border-bottom: 1px solid #3d3d3d;
   border-radius: 0px 0px 0px 12px;
+  margin-top: 15px;
 `;
 
 const PaddingIcon = styled.div`

@@ -18,7 +18,7 @@ export const LeftBar = () => (
               src="/Logo.png"
               alt="Picture of the author"
               width={180}
-              height={69}
+              height={80}
             />
           </Col>
           <Col xs={2} sm={2}>
@@ -45,9 +45,10 @@ export const LeftBar = () => (
         src="/dashboard.png"
         alt="Picture of the author"
         width={1100}
-        height={660}
+        height={600}
       />
     </MarginHorizontal>
+
     <Container>
       <Row>
         <Col xs={4} sm={4}>
@@ -86,40 +87,11 @@ export const LeftBar = () => (
 );
 
 const Container = styled.div`
-  margin: 47px 44px 39px 47px;
+  margin: 40px 44px 30px 47px;
 `;
 
 const MarginHorizontal = styled.div`
   margin: 0px 44px 0px 0px;
-`;
-
-const TitleText = styled.p`
-  font-family: "Hiragino Kaku Gothic Pro";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  color: #3d3d3d;
-  margin: 10px 0px 4px 0px;
-`;
-
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Text = styled.p`
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 140%;
-  text-align: center;
-  color: #aaaaaa;
-  margin-bottom: 7px;
 `;
 
 const MarginBottom20 = styled.div`
