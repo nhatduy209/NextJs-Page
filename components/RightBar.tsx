@@ -120,6 +120,7 @@ const SaleText = styled.p`
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
+  width: 80%;
 `;
 
 const SaleContent = styled.p`
@@ -128,6 +129,5 @@ const SaleContent = styled.p`
   font-weight: 300;
   font-size: 13px;
   line-height: 140%;
-  text-decoration-line: underline;
   color: #666666;
 `;

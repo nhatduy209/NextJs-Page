@@ -32,9 +32,7 @@ export const SalePannel = ({
             <DateText>{dateTime}</DateText>
           </TitleContainer>
 
-          <TwoLineContainer>
-            <ContentText>{content}</ContentText>
-          </TwoLineContainer>
+          <ContentText>{content}</ContentText>
         </PannelContainer>
       </Container>
     </>
@@ -64,14 +62,21 @@ const TitleText = styled.p`
 `;
 
 const ContentText = styled.span`
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 24px;
   text-decoration-line: underline;
   color: #3d3d3d;
-  display: inline;
+  line-height: 1.5em;
+  height: 3em;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 `;
 
 const DateText = styled.p`
@@ -95,11 +100,4 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`;
-
-const TwoLineContainer = styled.div`
-  line-height: 1.5em;
-  height: 3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
 `;
