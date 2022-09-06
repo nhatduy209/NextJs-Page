@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 
 interface SalePannelType {
-  imgUrl: String;
+  imgUrl: any;
   title: String;
   content: String;
   dateTime: String;
