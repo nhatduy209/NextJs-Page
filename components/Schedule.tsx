@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Dishes } from "./assets/Dishes";
 import { Store } from "./assets/Store";
+import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 
 export const Schedule = () => (
   <Container>
@@ -8,62 +9,52 @@ export const Schedule = () => (
     <TextLongDate>Wed.</TextLongDate>
 
     <Grid>
-      <MarginTop28>
+      <ScheduleMenu>
         <Store />
-      </MarginTop28>
-      <MarginTop28>
-        <WhiteContainer>
-          <Text>1F〜7F</Text>
-        </WhiteContainer>
-      </MarginTop28>
-      <MarginTop28>
-        <Center>
-          <Text>10:00〜20:00</Text>
-        </Center>
-      </MarginTop28>
+        <Text>ショップ</Text>
+      </ScheduleMenu>
 
-      <Text>ショップ</Text>
-      <WhiteContainer>
-        <Text>B1〜B2</Text>
-      </WhiteContainer>
-      <Center>
-        <Text>店舗によって異なる</Text>
-      </Center>
+      <Row>
+        <Col sm={5}>
+          {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
+          <WhiteContainer>1F〜7F</WhiteContainer>
+          <WhiteContainer>B1〜B2</WhiteContainer>
+        </Col>
+        <Col sm={7}>
+          <Text>10:00〜20:00</Text>
+          <Text>店舗によって異なる</Text>
+        </Col>
+      </Row>
     </Grid>
+
+    <Line />
 
     <MarginTopVertical>
-      <Line />
+      <Grid>
+        <ScheduleMenu>
+          <Dishes />
+          <Text>飲食店</Text>
+        </ScheduleMenu>
+
+        <Row>
+          <Col sm={5}>
+            {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
+            <WhiteContainer>1F〜7F</WhiteContainer>
+            <WhiteContainer>B1〜B2</WhiteContainer>
+          </Col>
+          <Col sm={7}>
+            <Text>10:00〜20:00</Text>
+            <Text>店舗によって異なる</Text>
+          </Col>
+        </Row>
+      </Grid>
     </MarginTopVertical>
-
-    <Grid>
-      <MarginTop28>
-        <Dishes />
-      </MarginTop28>
-      <MarginTop28>
-        <WhiteContainer>
-          <Text>1F〜7F</Text>
-        </WhiteContainer>
-      </MarginTop28>
-      <MarginTop28>
-        <Center>
-          <Text>10:00〜20:00</Text>
-        </Center>
-      </MarginTop28>
-
-      <Text>ショップ</Text>
-      <WhiteContainer>
-        <Text>B1〜B2</Text>
-      </WhiteContainer>
-      <Center>
-        <Text>店舗によって異なる</Text>
-      </Center>
-    </Grid>
   </Container>
 );
 const Container = styled.div`
   background: #f5f5f5;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 `;
 
@@ -89,31 +80,17 @@ const TextLongDate = styled.span`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 25% 25% 50%;
+  grid-template-columns: 30% 70%;
 `;
 
-const WhiteContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const WhiteContainer = styled.p`
   background: #ffffff;
   border-radius: 40px;
-  text-align: center;
-`;
-
-const Center = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const MarginTop28 = styled.div`
-  margin-top: 28px;
-  margin-bottom: 8px;
+  font-size: 11px;
 `;
 
 const MarginTopVertical = styled.div`
-  margin: 17px 0px 17px 0px;
+  margin: 10px 0px 0px 0px;
 `;
 
 const Text = styled.p`
@@ -128,4 +105,13 @@ const Line = styled.div`
   border: 1px dashed #3d3d3d;
 `;
 
-// const Row  = styled.d
+const ScheduleMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+const RowDirection = styled.div`
+  display: flex;
+  flex-direction: row;
+`;

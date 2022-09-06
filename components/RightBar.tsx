@@ -46,7 +46,7 @@ export const RightBar = () => {
             src="/sale.png"
             alt="Picture of the author"
             width={300}
-            height={300}
+            height={256}
           />
         </MarginTop32>
 

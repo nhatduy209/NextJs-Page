@@ -1,13 +1,7 @@
 import Image from "next/image";
-import { Grid, Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
+import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import styled from "styled-components";
 import { Access } from "./Access";
-import { Clock } from "./assets/Clock";
-import { DownArrow } from "./assets/DownArrow";
-import { FloorMap } from "./assets/FloorMap";
-import { Marker } from "./assets/Marker";
-import { Sound } from "./assets/Sound";
-import { Store } from "./assets/Store";
 import { Floor } from "./Floor";
 import { Open } from "./Open";
 import { SalePannel } from "./SalePannel";

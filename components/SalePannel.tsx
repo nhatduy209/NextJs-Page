@@ -23,6 +23,7 @@ export const SalePannel = ({
           width={75}
           height={75}
         />
+
         <PannelContainer>
           <TitleContainer>
             <BackgroundBlack>
@@ -49,6 +50,7 @@ const PannelContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  width: 70%;
 `;
 
 const TitleText = styled.p`

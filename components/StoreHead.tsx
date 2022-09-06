@@ -1,10 +1,10 @@
 import { DownArrow } from "./assets/DownArrow";
-import { Store } from "./assets/Store";
+import { StoreYellowDot } from "./assets/StoreYellowDot";
 import { Center, Text, TitleText } from "./Style";
 
 export const StoreHead = () => (
   <Center>
-    <Store />
+    <StoreYellowDot />
     <TitleText>店舗を探す</TitleText>
     <Text>SHOP</Text>
     <DownArrow />
