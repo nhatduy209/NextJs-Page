@@ -8,24 +8,26 @@ export const Schedule = () => (
     <TextDateMonth>8/31</TextDateMonth>
     <TextLongDate>Wed.</TextLongDate>
 
-    <Grid>
-      <ScheduleMenu>
-        <Store />
-        <Text>ショップ</Text>
-      </ScheduleMenu>
+    <MarginTopVertical>
+      <Grid>
+        <ScheduleMenu>
+          <Store />
+          <Text>ショップ</Text>
+        </ScheduleMenu>
 
-      <Row>
-        <Col sm={5}>
-          {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
-          <WhiteContainer>1F〜7F</WhiteContainer>
-          <WhiteContainer>B1〜B2</WhiteContainer>
-        </Col>
-        <Col sm={7}>
-          <Text>10:00〜20:00</Text>
-          <Text>店舗によって異なる</Text>
-        </Col>
-      </Row>
-    </Grid>
+        <Row>
+          <Col sm={5}>
+            {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
+            <WhiteContainer>1F〜7F</WhiteContainer>
+            <WhiteContainer>B1〜B2</WhiteContainer>
+          </Col>
+          <Col sm={7}>
+            <Text>10:00〜20:00</Text>
+            <Text>店舗によって異なる</Text>
+          </Col>
+        </Row>
+      </Grid>
+    </MarginTopVertical>
 
     <Line />
 
