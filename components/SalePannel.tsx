@@ -83,7 +83,7 @@ const DateText = styled.p`
   font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: 300;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 140%;
   color: #666666;
   margin-left: 10px;
