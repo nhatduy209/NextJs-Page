@@ -13,7 +13,7 @@ export const LeftBar = () => (
     <Container>
       <MarginBottom20>
         <Row>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <Image
               src="/Logo.png"
               alt="Picture of the author"
@@ -21,19 +21,19 @@ export const LeftBar = () => (
               height={80}
             />
           </Col>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <StoreHead />
           </Col>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <Floor />
           </Col>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <SoundHead />
           </Col>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <Open />
           </Col>
-          <Col xs={2} sm={2}>
+          <Col xs={4} sm={3} lg={2}>
             <Access />
           </Col>
         </Row>
@@ -51,7 +51,7 @@ export const LeftBar = () => (
 
     <Container>
       <Row>
-        <Col xs={4} sm={4}>
+        <Col xs={12} sm={12} lg={4}>
           <SalePannel
             imgUrl={"/Fruit1.png"}
             title={"レストラン・カフェ"}
@@ -61,7 +61,7 @@ export const LeftBar = () => (
             dateTime={"2022.07.20"}
           />
         </Col>
-        <Col xs={4} sm={4}>
+        <Col xs={12} sm={12} lg={4}>
           <SalePannel
             imgUrl={"/fruit2.png"}
             title={"レストラン・カフェ"}
@@ -71,7 +71,7 @@ export const LeftBar = () => (
             dateTime={"2022.07.20"}
           />
         </Col>
-        <Col xs={4} sm={4}>
+        <Col xs={12} sm={12} lg={4}>
           <SalePannel
             imgUrl={"/beauty.png"}
             title={"ショップ"}

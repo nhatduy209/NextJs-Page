@@ -6,10 +6,10 @@ import { LeftBar } from "../components/LeftBar";
 const Home: NextPage = () => {
   return (
     <Row>
-      <Col xs={12} sm={9}>
+      <Col xs={12} sm={8} lg={9}>
         <LeftBar />
       </Col>
-      <Col xs={6} sm={3}>
+      <Col xs={12} sm={4} lg={3}>
         <RightBar />
       </Col>
     </Row>

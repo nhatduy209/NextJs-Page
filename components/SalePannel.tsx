@@ -93,7 +93,8 @@ const BackgroundBlack = styled.div`
   background-color: #3d3d3d;
   border-radius: 30px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  height: 22px;
 `;
 
 const TitleContainer = styled.div`

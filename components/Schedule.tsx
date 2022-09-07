@@ -9,48 +9,46 @@ export const Schedule = () => (
     <TextLongDate>Wed.</TextLongDate>
 
     <MarginTopVertical>
-      <Grid>
-        <ScheduleMenu>
-          <Store />
+      <Row>
+        <Col sx={12} sm={3} lg={3}>
+          <ScheduleMenu>
+            <Store />
+            <StickText>ショップ</StickText>
+          </ScheduleMenu>
+        </Col>
 
-          <StickText>ショップ</StickText>
-        </ScheduleMenu>
-
-        <Row>
-          <Col sm={5}>
-            {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
-            <WhiteContainer>1F〜7F</WhiteContainer>
-            <WhiteContainer>B1〜B2</WhiteContainer>
-          </Col>
-          <Col sm={7}>
-            <Text>10:00〜20:00</Text>
-            <Text>店舗によって異なる</Text>
-          </Col>
-        </Row>
-      </Grid>
+        <Col sx={6} sm={4} lg={4}>
+          {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
+          <WhiteContainer>1F〜7F</WhiteContainer>
+          <WhiteContainer>B1〜B2</WhiteContainer>
+        </Col>
+        <Col sx={6} sm={5} lg={5}>
+          <Text>10:00〜20:00</Text>
+          <Text>店舗によって異なる</Text>
+        </Col>
+      </Row>
     </MarginTopVertical>
 
     <Line />
 
     <MarginTopVertical>
-      <Grid>
-        <ScheduleMenu>
-          <Dishes />
-          <StickText>飲食店</StickText>
-        </ScheduleMenu>
+      <Row>
+        <Col sx={12} sm={12} lg={3}>
+          <ScheduleMenu>
+            <Dishes />
+            <StickText>飲食店</StickText>
+          </ScheduleMenu>
+        </Col>
 
-        <Row>
-          <Col sm={5}>
-            {/* // <WhiteContainer>1F〜7F</WhiteContainer> */}
-            <WhiteContainer>1F〜7F</WhiteContainer>
-            <WhiteContainer>B1〜B2</WhiteContainer>
-          </Col>
-          <Col sm={7}>
-            <Text>10:00〜20:00</Text>
-            <Text>店舗によって異なる</Text>
-          </Col>
-        </Row>
-      </Grid>
+        <Col sx={12} sm={12} lg={4}>
+          <WhiteContainer>1F〜7F</WhiteContainer>
+          <WhiteContainer>B1〜B2</WhiteContainer>
+        </Col>
+        <Col sx={12} sm={12} lg={5}>
+          <Text>10:00〜20:00</Text>
+          <Text>店舗によって異なる</Text>
+        </Col>
+      </Row>
     </MarginTopVertical>
   </Container>
 );
@@ -94,7 +92,7 @@ const WhiteContainer = styled.p`
 `;
 
 const MarginTopVertical = styled.div`
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 15px;
 `;
 
 const Text = styled.p`
@@ -125,4 +123,5 @@ const ScheduleMenu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 `;
